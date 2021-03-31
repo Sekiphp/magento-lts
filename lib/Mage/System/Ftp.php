@@ -242,13 +242,13 @@ class Mage_System_Ftp
         $this->checkConnected();
 
         if(!file_exists($local)) {
-            throw new Exception("Local file doesn't exist: {$localFile}");
+            throw new Exception("Local file doesn't exist: {$local}");
         }
         if(!is_readable($local)) {
-            throw new Exception("Local file is not readable: {$localFile}");
+            throw new Exception("Local file is not readable: {$local}");
         }
         if(is_dir($local)) {
-            throw new Exception("Directory given instead of file: {$localFile}");
+            throw new Exception("Directory given instead of file: {$local}");
         }
 
         $globalPathMode = substr($remote, 0, 1) == "/";

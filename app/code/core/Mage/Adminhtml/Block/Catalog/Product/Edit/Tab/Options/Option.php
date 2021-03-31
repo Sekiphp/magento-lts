@@ -272,7 +272,7 @@ class Mage_Adminhtml_Block_Catalog_Product_Edit_Tab_Options_Option extends Mage_
                                 ? 'disabled' : null;
                             if ($scope == Mage_Core_Model_Store::PRICE_SCOPE_WEBSITE) {
                                 $value['optionValues'][$i]['checkboxScopePrice'] = $this->getCheckboxScopeHtml(
-                                    $_value->getOptionId(), 'price', is_null($_value->getstorePrice()),
+                                    $_value->getOptionId(), 'price', is_null($_value->getStorePrice()),
                                     $_value->getOptionTypeId());
                                 $value['optionValues'][$i]['scopePriceDisabled'] = is_null($_value->getStorePrice())
                                     ? 'disabled' : null;

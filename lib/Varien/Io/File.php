@@ -704,7 +704,7 @@ class Varien_Io_File extends Varien_Io_Abstract
      */
     public function ls($grep=null)
     {
-        $ignoredDirectories = Array('.', '..');
+        $ignoredDirectories = array('.', '..');
 
         if( is_dir($this->_cwd) ) {
             $dir = $this->_cwd;
@@ -714,11 +714,11 @@ class Varien_Io_File extends Varien_Io_Abstract
             throw new Exception('Unable to list current working directory.');
         }
 
-        $list = Array();
+        $list = array();
 
         if ($dh = opendir($dir)) {
             while (($entry = readdir($dh)) !== false) {
-                $list_item = Array();
+                $list_item = array();
 
                 $fullpath = $dir . DIRECTORY_SEPARATOR . $entry;
 
@@ -740,7 +740,7 @@ class Varien_Io_File extends Varien_Io_Abstract
                     $list_item['size'] = filesize($fullpath);
                     $list_item['leaf'] = true;
                     if( isset($pathinfo['extension'])
-                        && in_array(strtolower($pathinfo['extension']), Array('jpg', 'jpeg', 'gif', 'bmp', 'png'))
+                        && in_array(strtolower($pathinfo['extension']), array('jpg', 'jpeg', 'gif', 'bmp', 'png'))
                         && $list_item['size'] > 0
                     ) {
                         $list_item['is_image'] = true;

@@ -27,7 +27,7 @@
 
 class Varien_Image_Adapter_Gd2 extends Varien_Image_Adapter_Abstract
 {
-    protected $_requiredExtensions = Array("gd");
+    protected $_requiredExtensions = array("gd");
     private static $_callbacks = array(
         IMAGETYPE_GIF  => array('output' => 'imagegif',  'create' => 'imagecreatefromgif'),
         IMAGETYPE_JPEG => array('output' => 'imagejpeg', 'create' => 'imagecreatefromjpeg'),

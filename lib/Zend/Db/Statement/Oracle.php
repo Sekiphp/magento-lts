@@ -263,7 +263,7 @@ class Zend_Db_Statement_Oracle extends Zend_Db_Statement
             throw new Zend_Db_Statement_Oracle_Exception(oci_error($this->_stmt));
         }
 
-        $this->_keys = Array();
+        $this->_keys = array();
         if ($field_num = oci_num_fields($this->_stmt)) {
             for ($i = 1; $i <= $field_num; $i++) {
                 $name = oci_field_name($this->_stmt, $i);
@@ -271,7 +271,7 @@ class Zend_Db_Statement_Oracle extends Zend_Db_Statement
             }
         }
 
-        $this->_values = Array();
+        $this->_values = array();
         if ($this->_keys) {
             $this->_values = array_fill(0, count($this->_keys), null);
         }
@@ -412,7 +412,7 @@ class Zend_Db_Statement_Oracle extends Zend_Db_Statement
                 break;
         }
 
-        $result = Array();
+        $result = array();
         if ($flags != OCI_FETCHSTATEMENT_BY_ROW) { /* not Zend_Db::FETCH_OBJ */
             if (! ($rows = oci_fetch_all($this->_stmt, $result, 0, -1, $flags) )) {
                 if ($error = oci_error($this->_stmt)) {

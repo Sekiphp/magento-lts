@@ -163,7 +163,7 @@ class Mage_Adminhtml_Block_Permissions_Role_Grid_User extends Mage_Adminhtml_Blo
         $users  = Mage::getModel('admin/roles')->setId($roleId)->getRoleUsers();
         if (count($users)) {
             if ( $json ) {
-                $jsonUsers = Array();
+                $jsonUsers = array();
                 foreach($users as $usrid) $jsonUsers[$usrid] = 0;
                 return Mage::helper('core')->jsonEncode((object)$jsonUsers);
             } else {

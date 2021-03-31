@@ -108,7 +108,7 @@ class Mage_Adminhtml_Block_Api_User_Edit_Tab_Roles extends Mage_Adminhtml_Block_
         }
         $uRoles = Mage::registry('api_user')->getRoles();
         if ($json) {
-            $jsonRoles = Array();
+            $jsonRoles = array();
             foreach($uRoles as $urid) $jsonRoles[$urid] = 0;
             return Mage::helper('core')->jsonEncode((object)$jsonRoles);
         } else {

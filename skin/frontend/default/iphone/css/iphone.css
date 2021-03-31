@@ -924,7 +924,7 @@ input[type="checkbox"]:checked {
 .product-view {}
 .product-view .product-name h1 { color:#424242; font-size:18px; font-weight:bold; text-align:left; line-height:20px; margin:0 0 9px; }
 .product-view .product-image-wrap { padding:10px; position:relative; }
-.product-view .product-image { position:relative;; }
+.product-view .product-image { position:relative; }
 .product-view .product-image li { text-align:center; }
 .product-view .product-image li a { display:block; }
 

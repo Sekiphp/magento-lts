@@ -64,7 +64,7 @@ class AssertCatalogPriceRuleAppliedInProductPage extends AbstractAssertForm
         $productPriceBlock = $pageCatalogProductView->getViewBlock()->getPriceBlock();
         $actualPrices['regular'] = $productPriceBlock->getRegularPrice();
         $actualPrices['special'] = $productPriceBlock->getSpecialPrice();
-        $actualPrices['discount_amount'] = number_format($actualPrices['regular'] - $actualPrices['special'], 2);;
+        $actualPrices['discount_amount'] = number_format($actualPrices['regular'] - $actualPrices['special'], 2);
         $diff = $this->verifyData($actualPrices, $prices);
         \PHPUnit_Framework_Assert::assertEmpty($diff, $diff);
     }

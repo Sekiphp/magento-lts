@@ -302,7 +302,7 @@ class Zend_Oauth_Config implements Zend_Oauth_Config_ConfigInterface
                 . $method
                 . '. Supported are HMAC-SHA1, RSA-SHA1, PLAINTEXT and HMAC-SHA256');
         }
-        $this->_signatureMethod = $method;;
+        $this->_signatureMethod = $method;
         return $this;
     }
 

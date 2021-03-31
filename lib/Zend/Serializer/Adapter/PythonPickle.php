@@ -462,7 +462,7 @@ class Zend_Serializer_Adapter_PythonPickle extends Zend_Serializer_Adapter_Adapt
     protected function _writeArrayDict(array $value)
     {
         if (($id=$this->_searchMomo($value)) !== false) {
-            $this->_writeGet($id);;
+            $this->_writeGet($id);
             return;
         }
 

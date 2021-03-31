@@ -1313,7 +1313,7 @@ td.label label.enabled { background:url(images/icon-enabled.png) no-repeat 100% 
 .section-config .config-advanced > .entry-edit-head a { background:none; }
 .section-config .config-advanced > .entry-edit-head a:after { content:''; width:7px; height:5px; background:url(images/bkg_config-advanced.png) no-repeat 0 0; overflow:hidden; display:inline-block; vertical-align:middle; margin-right:-13px; margin-left:5px; }
 .section-config .config-advanced > .entry-edit-head a.open:after { background-position:0 -5px; }
-.section-config .config-advanced > .config { border:0; padding:15px 0 0;; }
+.section-config .config-advanced > .config { border:0; padding:15px 0 0; }
 
 /* Adjusting spacing between form field and nested accordion */
 .complex tr.nested + tr[id] > td { padding-top:15px !important; padding-bottom:30px!important; }

@@ -121,7 +121,7 @@ class Review extends Block
         }
         $reviewsTitles = $this->_rootElement->getElements($this->itemsSelector);
         foreach ($reviewsTitles as $title) {
-            $reviewTitle = $this->getReviewTitle($title);;
+            $reviewTitle = $this->getReviewTitle($title);
             $items[] = [
                 'title' => $reviewTitle,
                 'detail' => $this->getReviewText($reviewTitle),
